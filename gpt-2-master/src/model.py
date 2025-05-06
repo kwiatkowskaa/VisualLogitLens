@@ -10,6 +10,11 @@ class HParams:
     def set_hparam(self, key, value):
         setattr(self, key, value)
 
+    
+    def override_from_dict(self, param_dict):
+        for key, value in param_dict.items():
+            setattr(self, key, value)
+
     def __str__(self):
         return str(self.__dict__)
 
