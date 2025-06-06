@@ -17,7 +17,7 @@ A faithful reproduction of the original Logit Lens implementation provided in th
 First experimental application of Logit Lens to a Vision Transformer. Here, we use a DINO-trained ViT and compute cosine similarity between each intermediate layer and the final output representation to observe how the model's understanding develops.
 
 #### `04_layer_skipping_analysis_DINO.ipynb`
-Comprehensive layer analysis aiming to detect and justify the removal of potentially redundant layers in DINO. This is done using a combination of cosine similarity, Centered Kernel Alignment (CKA), and CKNNA (Class-K Nearest Neighbors Agreement) to measure inter-layer representation similarity.
+Comprehensive layer analysis aiming to detect and justify the removal of potentially redundant layers in DINO. This is done using a combination of cosine similarity, CKA (Canonical Correlation Analysis), and CKNNA (Centered Kernel Normalized Nearest Neighbors) to measure inter-layer representation similarity.
 
 #### `05_analysis_of_layer_skipping_dino_with_linear_probing.ipynb`
 This notebook evaluates how skipping certain layers affects downstream performance. Linear classifiers are trained on frozen representations from different configurations to assess the impact of layer removal on accuracy.
