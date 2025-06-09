@@ -21,3 +21,7 @@ Comprehensive layer analysis aiming to detect and justify the removal of potenti
 
 #### `05_analysis_of_layer_skipping_dino_with_linear_probing.ipynb`
 This notebook evaluates how skipping certain layers affects downstream performance. Linear classifiers are trained on frozen representations from different configurations to assess the impact of layer removal on accuracy.
+
+#### `06_greedy_layer_selection_analysis.ipynb`
+This notebook analyzes the contribution of individual transformer layers in DINO ViT-S16 and ViT-B8 models using a greedy selection strategy. The goal is to identify the smallest subset of layers needed to reach a target accuracy (e.g., 0.9), and compare the performance and layer selection patterns between the two models.
+
